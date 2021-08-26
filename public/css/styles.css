@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 40%;
+    z-index: 3;
+    position: absolute;
+    min-height: 100vh;
+    background:#00b490;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
+.circle {
+    height: min(30rem,40vw);
+    width: min(30rem,40vw);
+    background: #005248;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 20%;
+    opacity: 0.7;
+}
+
+.form-illus {
+    position: relative;
+    max-height: 90%;
+    max-width: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+
+.form-cont {
+    color: white;
+    max-width: 100%;
+    height: auto;
+    max-height: 40%;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 22%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 80%;
+}
+
+.form-head {
+    font-size: min(6rem, 14vw);
+    font-weight: 900;
+    line-height: 0.8;
+    font-family: 'Montserrat','Playfair Display';
+    -webkit-text-stroke: 2.5px white;
+    display: flex;
+    color: #ffa434;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.name-input {
+    font-family: 'Bellota Text';
+    color: white;
+    font-weight: 700;
+    caret-color: white;
+    font-size: 1rem;
+    outline: none;
+    letter-spacing: 1.2px;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background: rgba(0, 128, 96, 0.6);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.3rem;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.circle-btn {
+    margin-top: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+}
+
+.fa-arrow-circle-right {
+    font-size: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #ffa434;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-arrow-circle-right:hover {
+    background: #005248;
+    background-clip: text;
+}
